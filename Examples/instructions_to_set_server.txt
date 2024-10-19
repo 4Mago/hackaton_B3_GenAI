@@ -1,0 +1,10 @@
+1_Open command line (cmd)
+2_ngrok http 8080
+3_copy ngrok address
+4_prepend wss and append /llm-websocket to it. For example wss://b6b0-41-142-72-64.ngrok-free.app/llm-websocket
+5_paste address in retell AI agent (in Custom LLM URL)
+6_paste https ngrok ip address in .env file
+7_open new cmd
+8_cd in the folder where these files are
+9_(optional) change prompt in llm.py
+10_uvicorn server:app --reload --port=8080
